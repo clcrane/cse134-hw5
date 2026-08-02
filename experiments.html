@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/styles.css">
 
 
+    <link rel="modulepreload" href="js/theme.js">
+    <script type="module" src="js/theme.js"></script>
     <script>
         class HelloWorld extends HTMLElement {
             connectedCallback() {
@@ -36,6 +38,15 @@
         <a href="contact.html">Contact</a>
         <a href="experiments.html">Experiments</a>
     </nav>
+
+    <div class="theme-picker" hidden>
+            <label for="theme-select">Theme:</label>
+            <select id="theme-select" name="theme">
+                <option value="system">System</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
 </header>
 
 <main>

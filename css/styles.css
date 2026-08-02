@@ -71,3 +71,31 @@ footer {
         --link-color: #9fc3ff;
     }
 }
+
+    :root[data-theme="light"] {
+    color-scheme: light;
+
+    --background-color: #ffffff;
+    --text-color: #222222;
+    --surface-color: #f4f4f4;
+    --border-color: #cccccc;
+    --link-color: #2457a6;
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+
+    --background-color: #181818;
+    --text-color: #f1f1f1;
+    --surface-color: #262626;
+    --border-color: #555555;
+    --link-color: #9fc3ff;
+}
+
+.theme-picker {
+    margin-top: 1rem;
+}
+
+.theme-picker select {
+    padding: 0.4rem;
+}
