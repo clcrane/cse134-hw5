@@ -11,6 +11,7 @@
     <link rel="modulepreload" href="js/theme.js">
 
     <script type="module" src="js/theme.js"></script>
+    <script type="module" src="js/weather.js"></script>
     
 </head>
 
@@ -72,6 +73,32 @@
                 is still available.
             </p>
         </noscript>
+
+
+        <template id="weather-template">
+            <article>
+                <h3>Current Conditions</h3>
+
+                <p>
+                    Temperature:
+                    <strong class="weather-temperature"></strong>
+                </p>
+
+                <p>
+                    Conditions:
+                    <span class="weather-condition"></span>
+                </p>
+            </article>
+        </template>
+
+
+        <section>
+            <h2>Current Weather</h2>
+
+            <current-weather latitude="32.7157" longitude="-117.1611">
+                <p>Weather information is currently unavailable. Visit a weather service for current conditions.</p>
+            </current-weather>
+        </section>
     </main>
 
     <footer>
