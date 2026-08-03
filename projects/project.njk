@@ -1,0 +1,21 @@
+---
+pagination:
+  data: projects
+  size: 1
+  alias: project
+permalink: "/projects/{{ project.slug }}/index.html"
+layout: base.njk
+eleventyComputed:
+  title: "{{ project.title }}"
+  description: "{{ project.description }}"
+---
+
+<article>
+    <h2>{{ project.title }}</h2>
+
+    <p>{{ project.description }}</p>
+
+    <p>
+        <a href="/projects/">Back to all projects</a>
+    </p>
+</article>

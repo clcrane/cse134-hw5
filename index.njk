@@ -1,0 +1,68 @@
+---
+layout: base.njk
+title: Home
+description: Carolyn's portfolio featuring projects, experience, and web development work.
+weatherScript: true
+---
+
+<section>
+    <h2>Welcome</h2>
+
+    <p>
+        Welcome to my personal portfolio website. This site highlights
+        my background, education, technical skills, projects, and
+        experience as a computer science student.
+    </p>
+</section>
+
+<section>
+    <h2>Explore My Portfolio</h2>
+
+    <div>
+        <h3>Learn More About Me</h3>
+
+        <p>
+            Visit the <span>About Me</span> page to learn more about my
+            education, interests, and technical skills.<br>
+            You can also view my projects, resume, and contact information.
+        </p>
+
+        <form action="/projects/">
+            <button type="submit">Explore my work</button>
+        </form>
+    </div>
+</section>
+
+<noscript>
+    <p>
+        JavaScript is disabled, but the main content of this website
+        is still available.
+    </p>
+</noscript>
+
+<template id="weather-template">
+    <article>
+        <h3>Current Conditions</h3>
+
+        <p>
+            Temperature:
+            <strong class="weather-temperature"></strong>
+        </p>
+
+        <p>
+            Conditions:
+            <span class="weather-condition"></span>
+        </p>
+    </article>
+</template>
+
+<section>
+    <h2>Current Weather</h2>
+
+    <current-weather latitude="32.7157" longitude="-117.1611">
+        <p>
+            Weather information is currently unavailable.
+            Visit a weather service for current conditions.
+        </p>
+    </current-weather>
+</section>

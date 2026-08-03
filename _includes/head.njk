@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ title }} | Carolyn's Portfolio</title>
+<meta name="description" content="{{ description }}">
+
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="modulepreload" href="/js/theme.js">
+<script type="module" src="/js/theme.js"></script>
+
+{% if weatherScript %}
+<script type="module" src="/js/weather.js"></script>
+{% endif %}
+
+{% if experimentScript %}
+<script type="module" src="/js/experiments.js"></script>
+{% endif %}

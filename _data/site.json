@@ -1,0 +1,35 @@
+{
+  "title": "Carolyn's Portfolio",
+  "author": "Carolyn Crane",
+  "url": "https://example.com",
+  "currentYear": 2026,
+  "navigation": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "About",
+      "url": "/about/"
+    },
+    {
+      "name": "Projects",
+      "url": "/projects/"
+    },
+    {
+      "name": "Resume",
+      "url": "/resume/"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact/"
+    },
+    {
+      "name": "Experiments",
+      "url": "/experiments/"
+    }
+  ],
+  "social": {
+    "github": "https://github.com/"
+  }
+}

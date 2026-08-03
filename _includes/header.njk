@@ -1,0 +1,26 @@
+<header>
+    <a href="#main-content">Skip to main content</a>
+
+    <h1>{{ site.title }}</h1>
+
+    <nav aria-label="Main navigation">
+        {% for item in site.navigation %}
+            <a
+                href="{{ item.url }}"
+                {% if page.url == item.url %}aria-current="page"{% endif %}
+            >
+                {{ item.name }}
+            </a>
+        {% endfor %}
+    </nav>
+
+    <div class="theme-picker" hidden>
+        <label for="theme-select">Theme:</label>
+
+        <select id="theme-select" name="theme">
+            <option value="system">System</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+</header>

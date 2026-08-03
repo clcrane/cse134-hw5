@@ -1,0 +1,26 @@
+{
+  "name": "cse134-hw5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start": "eleventy --serve",
+  "dev": "eleventy --serve",
+  "build": "eleventy"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clcrane/cse134-hw5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/clcrane/cse134-hw5/issues"
+  },
+  "homepage": "https://github.com/clcrane/cse134-hw5#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}
